@@ -8,3 +8,6 @@ fi
 
 alias vi="vim"
 alias _reload_profile=". ~/.bashrc"
+alias dotfiles="cd ~/workspace/dotfiles"
+alias tmp="cd ~/workspace/tmp"
+alias _load_virtualenv=". ~/workspace/bin/env/activate"

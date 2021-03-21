@@ -1,0 +1,8 @@
+default_context:
+   full_name: "David Maas"
+   email: "david.maas@post.lu"
+abbreviations:
+   py: https://gitlab.dtt.ptech.lu/oss/cookiecutter-scoss-python.git
+   ans: https://gitlab.dtt.ptech.lu/oss/cookiecutter/cookiecutter-ansible.git
+
+cookiecutters_dir: "~/workspace/dotfiles/cookiecutters/"
