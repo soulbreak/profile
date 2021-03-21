@@ -2,6 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 export PATH=${PATH}:~/.local/bin:/opt/ansible/env/bin:/opt/fabric2/env/bin
+export LANG=en_US.utf8
 export HISTCONTROL=ignoredups:ignorespace      # don't put duplicated to history
 export HISTSIZE=10000                          # History size length
 export HISTFILESIZE=20000                      # Hitstory filesize
@@ -14,6 +15,7 @@ shopt -s checkwinsize                          # Check window size after each
 # Save and reload the history after each command finishes
 #export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND;"
 EDITOR_CMD=vim
+export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=$EDITOR_CMD
 export VISUAL=$EDITOR_CMD
 

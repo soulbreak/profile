@@ -96,3 +96,5 @@ set visualbell t_vb=            " disable visualbells completely
 set cursorline                  " highlight the current line
 set termguicolors               " Enable Truecolor support
 set cursorcolumn                " hightlight the current column
+
+let g:airline_powerline_fonts = 1

@@ -7,17 +7,25 @@ help:
 	@echo '   make install_bash'
 
 
-all: install_bash install_vim
+all: install_bash install_vim install_tmux install_xconfig
 
 
-install_bash: install_bash
+install_bash: 
 	ln -sf `pwd`/bashrc ~/.bashrc
 	ln -sf `pwd`/bash_aliases ~/.bash_aliases
 	ln -sf `pwd`/bash_functions ~/.bash_functions
 	ln -sf `pwd`/bash_profile ~/.bash_profile
 	ln -sf `pwd`/tmux.conf ~/.tmux.conf
-	ln -sf `pwd`/minttyrc.conf ~/.minttyrc.conf
+	ln -sf `pwd`/minttyrc ~/.minttyrc
 
 install_vim:
 	ln -sf `pwd`/vimrc ~/.vimrc
 
+
+install_tmux:
+	ln -sf `pwd`/tmux-powerline/tmux-powerlinerc ~/.tmux-powerlinerc
+
+install_xconfig:
+	ln -sf `pwd`/X-config/Xresources ~/.Xresources
+	ln -sf `pwd`/X-config/xinitrc ~/.xinitrc
+	ln -sf `pwd`/X-config/Xdefaults ~/.Xdefaults

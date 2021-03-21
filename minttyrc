@@ -40,8 +40,9 @@ BoldCyan=95,227,210
 White=248,248,242
 BoldWhite=249,248,245
 
+Term=xterm-256color
 BoldAsFont=no
-Font=Consolas
+Font=Powerline Consolas
 FontHeight=11
 WindowShortcuts=no
 SwitchShortcuts=no
