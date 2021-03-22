@@ -7,7 +7,7 @@ help:
 	@echo '   make install_bash'
 
 
-all: install_bash install_vim install_tmux install_xconfig
+all: install_bash install_vim install_tmux install_xconfig install_nvim
 
 
 install_bash: 
@@ -29,3 +29,13 @@ install_xconfig:
 	ln -sf `pwd`/X-config/Xresources ~/.Xresources
 	ln -sf `pwd`/X-config/xinitrc ~/.xinitrc
 	ln -sf `pwd`/X-config/Xdefaults ~/.Xdefaults
+
+install_nvim: clean_nvim
+	@echo Installing vundle for neovim
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
+	ln -sf `pwd`/nvimrc ~/.nvimrc
+	ln -sf `pwd`/nvim   ~/.nvim
+
+clean_nvim:
+	rm -Rf ~/.nvimrc
+	rm -Rf ~/.nvim

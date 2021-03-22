@@ -7,59 +7,27 @@ set term=xterm-256color
 call plug#begin('~/.vim/plugged')  " Plugins will be installed in this folder
 
 " Visual
-Plug 'nanotech/jellybeans.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'romainl/Apprentice'
-Plug 'Glench/Vim-Jinja2-Syntax'
 
 " General Purpose Plugins
-Plug 'preservim/nerdtree'
 Plug 'ciaranm/detectindent'
-Plug 'SirVer/ultisnips'
-Plug 'kien/ctrlp.vim'
-Plug 'AndrewRadev/linediff.vim'
 
 " Python Plugins
 Plug 'dense-analysis/ale'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'hynek/vim-python-pep8-indent'
-Plug 'morhetz/gruvbox'
 
 " Docker Plugins
 Plug 'ekalinin/Dockerfile.vim'
 
-" Vagrant Plugin
-Plug 'hashivim/vim-vagrant'
-
-" Vue Plugins
-Plug 'posva/vim-vue'
-
-" Rust Plugins
-Plug 'rust-lang/rust.vim'
-
-" Openhab Plugins
-Plug 'cyberkov/openhab-vim'
-
-" PHP
-Plug 'StanAngeloff/php.vim'
-
-" Logstash highlight
-Plug 'robbles/logstash.vim'
-
-" Logrotate syntax highlight
-Plug 'moon-musick/vim-logrotate'
-
 " Yaml
 Plug 'stephpy/vim-yaml'
 
-" RST
-Plug 'dhruvasagar/vim-table-mode'
 
-" Yang
-Plug 'nathanalderson/yang.vim'
 
 call plug#end()
 "
