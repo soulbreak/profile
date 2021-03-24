@@ -61,8 +61,8 @@ set number relativenumber       " display relative numbers" set foldcolumn=2 dis
 set nowrap                      " Prevent wrapping
 set title                       " display title in X.
 set visualbell t_vb=            " disable visualbells completely
-set cursorline                  " highlight the current line
+"set cursorline                  " highlight the current line
 set termguicolors               " Enable Truecolor support
-set cursorcolumn                " hightlight the current column
+"set cursorcolumn                " hightlight the current column
 
 let g:airline_powerline_fonts = 1
