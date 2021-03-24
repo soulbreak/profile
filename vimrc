@@ -11,7 +11,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'romainl/Apprentice'
+Plug 'fcpg/vim-orbital'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 " General Purpose Plugins
 Plug 'ciaranm/detectindent'
@@ -31,7 +32,7 @@ Plug 'stephpy/vim-yaml'
 
 call plug#end()
 "
-"
+colorscheme orbital
 
 " Indentation settings
 " "

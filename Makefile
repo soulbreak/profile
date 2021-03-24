@@ -7,7 +7,7 @@ help:
 	@echo '   make install_bash'
 
 
-all: install_bash install_vim install_tmux install_xconfig install_nvim
+all: install_bash install_vim install_tmux install_xconfig install_nvim install_gitconfig
 
 
 install_bash: 
@@ -39,3 +39,6 @@ install_nvim: clean_nvim
 clean_nvim:
 	rm -Rf ~/.nvimrc
 	rm -Rf ~/.nvim
+
+install_gitconfig:
+	ln -sf `pwd`/gitconfig   ~/.gitconfig
