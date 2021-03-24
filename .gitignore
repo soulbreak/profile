@@ -2,5 +2,5 @@ env/
 .gitconfig
 cookiecutters/
 cookiecutterrc
-gitconfig
+_gitconfig
 

@@ -41,4 +41,4 @@ clean_nvim:
 	rm -Rf ~/.nvim
 
 install_gitconfig:
-	ln -sf `pwd`/gitconfig   ~/.gitconfig
+	[ `pwd`/_gitconfig ] && ln -sf `pwd`/_gitconfig ~/.gitconfig
