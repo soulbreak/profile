@@ -7,11 +7,12 @@ set term=xterm-256color
 call plug#begin('~/.vim/plugged')  " Plugins will be installed in this folder
 
 " Visual
-Plug 'flazz/vim-colorschemes'
+"Plug 'flazz/vim-colorschemes'
 Plug 'Yggdroot/indentLine'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'fcpg/vim-orbital'
+"Plug 'fcpg/vim-orbital'
+Plug 'mhartington/oceanic-next'
 Plug 'Glench/Vim-Jinja2-Syntax'
 
 " General Purpose Plugins
@@ -32,7 +33,8 @@ Plug 'stephpy/vim-yaml'
 
 call plug#end()
 "
-colorscheme orbital
+"colorscheme orbital
+colorscheme OceanicNext
 
 " Indentation settings
 " "
