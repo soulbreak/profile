@@ -7,7 +7,7 @@ help:
 	@echo '   make install_bash'
 
 
-all: install_bash install_vim install_tmux install_xconfig install_nvim install_gitconfig
+all: install_bash install_vim install_tmux install_xconfig install_nvim install_gitconfig install_fzf_history
 
 
 install_bash: 
@@ -42,3 +42,7 @@ clean_nvim:
 
 install_gitconfig:
 	[ `pwd`/_gitconfig ] && ln -sf `pwd`/_gitconfig ~/.gitconfig
+
+install_fzf_history:
+	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	~/.fzf/install

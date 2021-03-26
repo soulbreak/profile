@@ -29,4 +29,6 @@
     ; Show last 10 tags
     tagl = ! git tag --sort=-version:refname | head -n 10
 
-
+[core]
+    ; my global ignores file
+    excludesfile = ~/.gitignore

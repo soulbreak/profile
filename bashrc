@@ -105,3 +105,5 @@ if ! shopt -oq posix; then
 fi
 
 unset color_prompt force_color_prompt
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
