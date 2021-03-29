@@ -32,6 +32,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
         "pwd 89 211" \
         "now_playing 234 37" \
         "load 237 167" \
+        "cpu 240 136" \
         "battery 137 127" \
     )
 fi

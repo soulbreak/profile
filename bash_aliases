@@ -6,6 +6,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+
+alias psc='ps xawf -eo pid,user,cgroup,args'
 alias vi="vim"
 alias _reload_profile=". ~/.bashrc"
 alias dotfiles="cd ~/workspace/dotfiles"
