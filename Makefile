@@ -24,7 +24,7 @@ install_vim:
 
 install_tmux:
 	ln -sf `pwd`/tmux-powerline/tmux-powerlinerc ~/.tmux-powerlinerc
-	ln -sf `pwd`/ssh ~/.ssh/rc
+	ln -sf `pwd`/sshrc ~/.ssh/rc
 
 install_xconfig:
 	ln -sf `pwd`/X-config/Xresources ~/.Xresources

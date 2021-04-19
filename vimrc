@@ -19,9 +19,9 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'ciaranm/detectindent'
 
 " Python Plugins
-Plug 'dense-analysis/ale'
-Plug 'vim-scripts/indentpython.vim'
-Plug 'hynek/vim-python-pep8-indent'
+"Plug 'dense-analysis/ale'
+"Plug 'vim-scripts/indentpython.vim'
+"Plug 'hynek/vim-python-pep8-indent'
 
 " Docker Plugins
 Plug 'ekalinin/Dockerfile.vim'

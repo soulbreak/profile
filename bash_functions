@@ -21,6 +21,7 @@ command_exists() {
 update-ssh-socket(){
     SSH_AUTH_SOCK=$(find /tmp/ssh* -uid "$(id -u)" -type s -name agent.\* -printf '%C@ %p\n' 2>/dev/null | sort | tail -n1 |cut -d' ' -f2)
     export SSH_AUTH_SOCK
+    echo "Socket updated to $SSH_AUTH_SOCK"
 }
 update-ssh-socket
 

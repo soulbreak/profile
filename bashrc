@@ -19,6 +19,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 export EDITOR=$EDITOR_CMD
 export VISUAL=$EDITOR_CMD
 
+export ANSIBLE_HOME=/home/users/dmaas/workspace/ansible
+export ANSIBLE_CONFIG=/home/users/dmaas/workspace/ansible/ansible.cfg
+export ANSIBLE_VAULT_PASSWORD_FILE=/home/users/dmaas/.ansiblevault
 
 # If not running interactively, don't do anything
 case $- in
