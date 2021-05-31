@@ -7,10 +7,17 @@ help:
 	@echo '   make install_bash'
 
 
-all: install_bash install_vim install_tmux install_xconfig install_nvim install_gitconfig install_fzf_history
+all: install_bash install_vim install_tmux install_xconfig install_nvim install_gitconfig install_fzf_histoy install_starship
+
+install_starship:
+	mkdir -p ~/workspace/bin
+	sh -c "$$(curl -fsSL https://starship.rs/install.sh)" -- --bin-dir ~/workspace/bin
+	mkdir -p ~/.config && starship print-config --default > `pwd`/starship.toml
+	ln -sf `pwd`/starship.toml ~/.config/starship.toml
 
 
-install_bash: 
+
+install_bash:
 	ln -sf `pwd`/bashrc ~/.bashrc
 	ln -sf `pwd`/bash_aliases ~/.bash_aliases
 	ln -sf `pwd`/bash_functions ~/.bash_functions

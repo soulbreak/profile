@@ -1,6 +1,7 @@
 #
 . "$HOME/workspace/dotfiles/bash_colors"
-. "$HOME/workspace/dotfiles/git-prompt.sh"
+#. "$HOME/workspace/dotfiles/git-prompt.sh"
+ eval "$(starship init bash)"
 
 # Public: Verifies if a command exists on the system
 #
@@ -15,6 +16,12 @@
 command_exists() {
   # shellcheck disable=SC2039
   type "$1" &> /dev/null ;
+}
+
+_ssh_molecule () {
+  container=$1
+  shift
+  ssh -i /tmp/.molecule_${container}_ssh/molecule_id_rsa root@$(docker inspect ${container} | jq '.[].NetworkSettings.Networks | .[].IPAddress' -r) $@
 }
 
 
@@ -41,6 +48,9 @@ man() {
     man "$@"
 }
 
+grep_uncoment() {
+   cat - | grep -v "^\s*$\|^\s*\#"
+}
 
 # Public: Backup up File
 #

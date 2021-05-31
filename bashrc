@@ -1,7 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-export PATH=${PATH}:~/.local/bin:/opt/ansible/env/bin:/opt/fabric2/env/bin
+export PATH=${PATH}:~/workspace/bin:~/.local/bin:/opt/ansible/env/bin:/opt/fabric2/env/bin
 export LANG=en_US.utf8
 export HISTCONTROL=ignoredups:ignorespace      # don't put duplicated to history
 export HISTSIZE=10000                          # History size length
@@ -92,6 +92,11 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 
+if [ -f ~/.p/load.sh ]; then
+    . ~/.p/load.sh
+fi
+
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -108,5 +113,9 @@ if ! shopt -oq posix; then
 fi
 
 unset color_prompt force_color_prompt
+
+export PATH="/opt/pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
